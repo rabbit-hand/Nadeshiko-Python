@@ -1,16 +1,23 @@
-# なでしこパイソン V7.0 / Nadesiko Python V7.0 🌍
+# なでしこパイソン V7.0 / Nadesiko Python V7.0
 
 [![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/nadesiko3-python/nadesiko3-python.svg)](https://github.com/nadesiko3-python/nadesiko3-python/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/nadesiko3-python/nadesiko3-python.svg)](https://github.com/nadesiko3-python/nadesiko3-python/network)
 [![Version](https://img.shields.io/badge/version-7.0.0-orange.svg)](CHANGELOG.md)
 
-## 🚀 世界を変えるアップデート - World-Changing Update
+日本語・英語自然言語プログラミングをPythonで実現する開発環境
 
-日本語・英語自然言語プログラミングをPythonで実現する革命的教育プラットフォーム / Revolutionary educational platform for Japanese-English natural language programming in Python
+## V7.0 の新機能
 
-**🆕 V7.0で新登場**: AIパワー、ビジュアルプログラミング、リアルタイム協働、クラウド同期、モバイル対応！
+V7.0 で以下の機能を追加しました：
+
+- **AI自然言語理解** - 自然言語からプログラミング意図を解析
+- **ビジュアルプログラミング** - ドラッグ＆ドロップでコード生成
+- **リアルタイム協働** - 複数ユーザーでの同時編集
+- **クラウド同期** - プロジェクトの自動保存・共有
+- **コード補完** - コンテキストに応じた入力支援
+- **モバイル対応** - スマートフォン・タブレット対応
+- **デバッグツール** - 実行フロー可視化
+- **ゲーミフィケーション** - 学習進捗の可視化
 
 ---
 
