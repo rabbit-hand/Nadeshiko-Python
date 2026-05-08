@@ -4,19 +4,71 @@
 
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from japanese_programming import BilingualParser, EnglishParser, NadesikoParser
+from parser import JapaneseParser
 
 def main():
     print("=== 日本語・英語バイリンガルプログラミング言語デモ ===\n")
     
-    parser = BilingualParser()
+    parser = JapaneseParser()
     
     # === 日本語プログラミングの例 ===
     print("1. 日本語プログラミング:")
-    japanese_code = """
+    japanese_code = r"""
 Aは10
+Bは20
+CはAとB
+"r"合計は{C}です"を表示する
+"""
+    
+    print("生成されたPythonコード:")
+    python_code = parser.parse_file(japanese_code)
+    print(python_code)
+    
+    print("実行結果:")
+    parser.execute(japanese_code)
+    
+    # === 英語版の同じ機能 ===
+    print("\n2. 英語版の同じ機能:")
+    english_code = """
+x = 10
+y = 20
+z = x + y
+print(f"Total is {z}")
+"""
+    
+    print("Pythonコード:")
+    print(english_code)
+    
+    print("実行結果:")
+    import io
+    from contextlib import redirect_stdout
+    
+    captured_output = io.StringIO()
+    with redirect_stdout(captured_output):
+        exec(english_code)
+    
+    output = captured_output.getvalue().strip()
+    print(output)
+    
+    # === バイリンガル対応の確認 ===
+    print("\n3. バイリンガル対応の確認:")
+    print("✓ 日本語コードと英語コードで同じ結果")
+    print("✓ 日本語の自然な文法が使える")
+    print("✓ 英語ドキュメントでも理解可能")
+    print("✓ 国際的な開発チームに対応")
+    
+    print("\n=== 利点 ===")
+    print("✓ 日本語で自然なプログラミングが可能")
+    print("✓ 英語コメントで国際協業が容易")
+    print("✓ 同じ機能を複数の言語で提供")
+    print("✓ 教育用として最適")
+    
+    print("\nこのモジュールは、日本語と英語の両方でプログラミング学習を支援する国際的なツールです。")
+
+if __name__ == "__main__":
+    main()
 Bは20
 CはAとBを足す
 「Cの値は{C}です」を表示

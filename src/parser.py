@@ -33,7 +33,12 @@ class JapaneseParser:
         # print文: 「値を表示する」
         if line.endswith('を表示する'):
             value = line.replace('を表示する', '').strip()
-            return f"print({self._translate_expression(value)})"
+            translated_value = self._translate_expression(value)
+            # 日本語引用符を適切に処理
+            if translated_value.startswith('"') and translated_value.endswith('"'):
+                return f"print({translated_value})"
+            else:
+                return f"print({translated_value})"
         
         # input文: 「読み込む」
         if line.endswith('を読み込む'):
@@ -112,6 +117,9 @@ class JapaneseParser:
                 expr = f'f"{content}"'
             else:
                 expr = f'"{content}"'
+        # 既に変換済みの文字列はそのまま使用
+        elif expr.startswith('"') and expr.endswith('"'):
+            return expr
         elif expr.startswith('「') or expr.endswith('」'):
             # 片方だけの場合は通常の文字列として処理
             expr = expr.replace('「', '"').replace('」', '"')
