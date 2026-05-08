@@ -220,4 +220,24 @@ parser.execute(code)
 # Output: メッセージ: こんにちは世界
 ```
 
-This Japanese Programming Language module is now ready for use, providing a powerful and reliable tool for learning programming in natural Japanese!
+## Multilingual Support
+
+This module supports both Japanese and English interfaces:
+
+### For Japanese Users
+- Use natural Japanese syntax as shown in examples
+- All documentation and examples are available in Japanese
+- Follow the Japanese README (README.md) for detailed instructions
+
+### For International Users
+- This English README (README_EN.md) provides complete documentation
+- All Japanese code examples work exactly as shown
+- The module automatically converts Japanese syntax to Python code
+- No need to understand Japanese to use the basic features
+
+### Language Support
+- **Japanese**: Natural language programming with Japanese grammar
+- **English**: Full documentation and examples in English
+- **Code**: Write in Japanese, automatically converted to Python
+
+This Japanese Programming Language module is now ready for international use, providing a powerful and reliable tool for learning programming in natural Japanese while being accessible to users worldwide!
