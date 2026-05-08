@@ -130,6 +130,115 @@ Nadesiko3 is one of Japan's most popular educational programming languages. From
 3. **Intuitive Expression**: Easy-to-understand syntax even for programming beginners
 4. **Practicality**: Features useful for actual application development
 
+## English Programming Syntax Support
+
+While this module primarily focuses on Japanese natural language programming, it also supports standard English programming syntax:
+
+### For English Documentation
+```python
+# Standard English code works directly
+x = 10
+y = 20
+z = x + y
+print(z)
+```
+
+### For Mixed Code
+You can mix English comments with Japanese code:
+```python
+# English comment + Japanese code
+x = 10  # Assign variable
+y = 20  # Assign variable
+z = x + y  # English arithmetic
+print(z)  # Japanese print statement
+```
+
+### Language Independence
+The module automatically handles both languages:
+- **Japanese Code**: Natural language syntax with automatic conversion
+- **English Code**: Standard Python syntax works directly
+- **Mixed Documentation**: English comments with Japanese examples
+- **No Language Barriers**: Users can work in their preferred language
+
+### Detailed English Syntax Explanation
+
+This module supports the following English programming syntax:
+
+#### Variables
+```python
+x = 10  # Assign variable
+y = 20  # Assign variable
+```
+
+#### Conditional Statements
+```python
+if x > y:
+    print("x is greater than y")
+else:
+    print("x is less than or equal to y")
+```
+
+#### Loops
+```python
+for i in range(5):
+    print(i)
+```
+
+#### Functions
+```python
+def add(x, y):
+    return x + y
+
+result = add(10, 20)
+print(result)
+```
+
+#### Input/Output
+```python
+print("Hello, World!")  # Print statement
+name = input("What is your name? ")  # Input statement
+print("Hello, " + name + "!")  # Print statement with variable
+```
+
+#### Operators
+```python
+x = 10
+y = 20
+print(x + y)  # Addition
+print(x - y)  # Subtraction
+print(x * y)  # Multiplication
+print(x / y)  # Division
+print(x > y)  # Greater than
+print(x < y)  # Less than
+print(x == y)  # Equal to
+print(x != y)  # Not equal to
+print(x and y)  # Logical AND
+print(x or y)  # Logical OR
+print(not x)  # NOT
+```
+
+#### Comparison with Japanese Syntax
+```python
+# Japanese comparison operators work with the module
+x = 10
+y = 20
+print(x > y)  # xよりも大きいy
+print(x < y)  # xよりも小さいy
+print(x == y)  # xと等しいy
+print(x != y)  # xと異なるy
+```
+
+#### Comparison with English Syntax
+```python
+# Standard English comparison operators also work
+x = 10
+y = 20
+print(x > y)  # Greater than
+print(x < y)  # Less than
+print(x == y)  # Equal to
+print(x != y)  # Not equal to
+```
+
 ## Testing
 
 The module includes comprehensive tests:
